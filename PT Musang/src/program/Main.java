@@ -126,13 +126,13 @@ public class Main {
 				 System.out.println("Jabatan :"+k.getJabatan());
 				 
 				 if(k instanceof Admin) {
-					 System.out.println("Gaji Karyawan :"+(k.hitungGaji(0.05)) + ((Admin)k).getGaji());
+					 System.out.println("Gaji Karyawan :"+(k.hitungGaji(5)) + ((Admin)k).getGaji());
 					 System.out.println("=============================");
 				 }else if(k instanceof Manager) {
-					 System.out.println("Gaji Karyawan :"+k.hitungGaji(0.1) + ((Manager)k).getGaji());
+					 System.out.println("Gaji Karyawan :"+k.hitungGaji(10) + ((Manager)k).getGaji());
 					 System.out.println("=============================");
 				 }else {
-					 System.out.println("Gaji Karyawan :"+k.hitungGaji(0.075) + ((Supervisor)k).getGaji());
+					 System.out.println("Gaji Karyawan :"+k.hitungGaji(7.5) + ((Supervisor)k).getGaji());
 					 System.out.println("=============================");
 				 }
 			}
